@@ -77,9 +77,7 @@ export default function Root() {
                         : ""
                     }
                   >
-                    {/* other code */}
-                  </NavLink>
-                  {/* <Link to={`contacts/${contact.id}`}>                  
+                  {/* <Link to={`contacts/${contact.id}`}>                   */}
                     {contact.first || contact.last ? (
                       <>
                         {contact.first} {contact.last}
@@ -88,8 +86,8 @@ export default function Root() {
                       <i>No Name</i>
                     )}{" "}
                     {contact.favorite && <span>★</span>}
-                  </Link> */}
-
+                  {/* </Link> */}
+                  </NavLink>
                 </li>
               ))}
             </ul>
