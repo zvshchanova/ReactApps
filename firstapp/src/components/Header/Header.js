@@ -5,8 +5,8 @@ import style from './Header.module.css'
 
 const Header =() =>{
     return(
-    <header className = {style.header}>
-    <img src={logo} alt="logo" />
-    </header>)
+    <div className = {style.header}>
+    <img src={logo} className = {style.img} alt="logo" />
+    </div>)
 }
 export default Header;
