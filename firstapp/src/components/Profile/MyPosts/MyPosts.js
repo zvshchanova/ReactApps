@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import style from './MyPosts.module.css';
 import Post from './Post/Post';
 
 const MyPosts =(props) =>{
-    let postsItems = props.posts.map( el => <Post id={el.id} message={el.message} likescount={el.likescount} key={el.id}/>);
+// const state = useContext(StateContext);
+     let postsItems = props.posts.map( el => <Post id={el.id} message={el.message} likescount={el.likescount} key={el.id}/>);
+    // let postsItems = state.posts.map( el => <Post id={el.id} message={el.message} likescount={el.likescount} key={el.id}/>);
+
     let newPostElement = React.createRef();
 
     const addPost = () =>{
         let text = newPostElement.current.value;
-        console.log(text);        
+        alert(text);        
     }
 
     return(

@@ -1,19 +1,13 @@
-import React, { createContext } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import state from "./redux/state";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-const StateContext = createContext();
-
 root.render(
   <React.StrictMode>
-    <App state={state}/>
-    {/* <StateContext.Provider value={state}>
-        <App state={state}/>
-    </StateContext.Provider> */}
+    <App />
   </React.StrictMode>
 );
 
